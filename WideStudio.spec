@@ -3,10 +3,12 @@
 
 Summary:	WideStudio Application Builder
 Summary(ja):	WideStudio ¥¢¥×¥ê¥±¡¼¥·¥ç¥ó¥Ó¥ë¥À
+Summary(pl):	WideStudio - ¶rodowisko do budowania aplikacji
 Name:		WideStudio
 Version:	%{ver}.%{rel}
 Release:	1
 License:	BSD
+Group:		X11/Development/Tools
 Source0:	http://dl.sf.net/widestudio/ws-v%{ver}-%{rel}-src.tar.gz
 # Source0-md5:	2a360360f146d1b022db8410010917b8
 Source1:	http://dl.sf.net/widestudio/WSClassReference-je.pdf
@@ -36,40 +38,43 @@ Source12:	http://dl.sf.net/widestudio/WSusersGUide-en.pdf
 Source13:	http://dl.sf.net/widestudio/WSusersGuide-jp.pdf             
 # Source13-md5:	a1f8686f942a8d555e9cab6b3a8d40fb
 Patch0:		%{name}-paths.patch
-Group:		X11/Development/Tools
-URL:		http://www.widestudio.org
+URL:		http://www.widestudio.org/
+BuildRequires:	XFree86-devel
+BuildRequires:	glut-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
-BuildRequires:	unixODBC-devel
-BuildRequires:	postgresql-devel
 BuildRequires:	mysql-devel
-BuildRequires:	python-devel
 BuildRequires:	perl-devel
-BuildRequires:	glut-devel
-BuildRequires:	XFree86-devel
+BuildRequires:	postgresql-devel
+BuildRequires:	python-devel
 BuildRequires:	ruby
+BuildRequires:	unixODBC-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WideStudio is an integrated development environment(IDE)
-to build GUI applications for Linux / FreeBSD / SOLARIS / 
-Windows95/98/ME,Windows NT,Win2K.
+WideStudio is an integrated development environment(IDE) to build GUI
+applications for Linux, FreeBSD, Solaris, Windows95/98/ME, Windows NT,
+Win2K.
 
 %description -l ja
-WideStudio¤Ï¡¢Windows95,98,WindowsNT,Windows2000,Linux,FreeBSD,SOLARIS¾å¤ÇÆ°ºî¤¹¤ë¡¢C/C++¤Î½ã¹ñ»º¤Î´°Á´¥Õ¥ê¡¼¤Î¥¦¥£¥ó¥É¥¦¥¢¥×¥ê¥±¡¼¥·¥ç¥óÅý¹ç³«È¯´Ä¶­¤Ç¤¹¡£
-
+WideStudio¤Ï¡¢Windows95,98,WindowsNT,Windows2000,Linux,FreeBSD,SOLARIS
+¾å¤ÇÆ°ºî¤¹¤ë¡¢C/C++¤Î½ã¹ñ»º¤Î´°Á´¥Õ¥ê¡¼¤Î¥¦¥£¥ó¥É¥¦¥¢¥×¥ê¥±¡¼¥·¥ç¥óÅý¹ç³«È¯´Ä¶­¤Ç¤¹¡£
 
 %package pdfdoc
-Summary:	WideStudio documentation.
+Summary:	WideStudio documentation
+Summary(pl):	Dokumentacja do WideStudio
 Group:		X11/Development/Tools
 
 %description pdfdoc
 WideStudio documentation.
 
+%description pdfdoc -l pl
+Dokumentacja do WideStudio.
 
 %package opengl
-Summary:	WideStudio OpenGL library.
+Summary:	WideStudio OpenGL library
 Summary(ja):	WideStudio OpenGL ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka OpenGL do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	glut-devel
@@ -80,10 +85,13 @@ The WideStudio-opengl package provides library for OpenGL.
 %description opengl -l ja
 WideStudio-opengl¤Ï¡¢OpenGLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
 
+%description opengl -l pl
+Pakiet WideStudio-opengl dostarcza bibliotekê do OpenGL.
 
 %package mysql
-Summary:	WideStudio MySQL library.
+Summary:	WideStudio MySQL library
 Summary(ja):	WideStudio MySQL ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka MySQL do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	mysql-devel
@@ -94,24 +102,30 @@ The WideStudio-mysql package provides library for MySQL.
 %description mysql -l ja
 WideStudio-mysql¤Ï¡¢MySQLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
 
+%description mysql -l pl
+Pakiet WideStudio-mysql dostarcza bibliotekê do MySQL.
 
 %package postgresql
-Summary:	WideStudio postgreSQL library.
-Summary(ja):	WideStudio postgreSQL ¥é¥¤¥Ö¥é¥ê
+Summary:	WideStudio PostgreSQL library
+Summary(ja):	WideStudio PostgreSQL ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka PostgreSQL do Widestudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	postgresql-devel
 
 %description postgresql
-The WideStudio-postgresql package provides library for postgreSQL.
+The WideStudio-postgresql package provides library for PostgreSQL.
 
 %description postgresql -l ja
-WideStudio-postgresql¤Ï¡¢postgreSQLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
+WideStudio-postgresql¤Ï¡¢PostgreSQLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
 
+%description postgresql -l pl
+Pakiet WideStudio-postgresql dostarcza bibliotekê do PostgreSQL.
 
 %package unixodbc
-Summary:	WideStudio unixODBC library.
+Summary:	WideStudio unixODBC library
 Summary(ja):	WideStudio unixODBC ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka unixODBC do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	unixODBC-devel
@@ -122,10 +136,13 @@ The WideStudio-unixodbc package provides library for unixODBC.
 %description unixodbc -l ja
 WideStudio-unixodbc¤Ï¡¢unixODBCÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
 
+%description unixodbc -l pl
+Pakiet WideStudio-unixodbc dostarcza bibliotekê do unixODBC.
 
 %package python
-Summary:	WideStudio python library.
+Summary:	WideStudio python library
 Summary(ja):	WideStudio python ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka python do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	python
@@ -136,10 +153,13 @@ The WideStudio-python package provides library for python.
 %description python -l ja
 WideStudio-python¤Ï¡¢pythonÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
 
+%description python -l pl
+Pakiet WideStudio-python dostarcza bibliotekê do pythona.
 
 %package ruby
-Summary:	WideStudio ruby library.
+Summary:	WideStudio ruby library
 Summary(ja):	WideStudio ruby ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka ruby do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	ruby
@@ -150,10 +170,13 @@ The WideStudio-ruby package provides library for ruby.
 %description ruby -l ja
 WideStudio-ruby¤Ï¡¢rubyÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
 
+%description ruby -l pl
+Pakiet WideStudio-ruby dostarcza bibliotekê do ruby'ego.
 
 %package perl
-Summary:	WideStudio perl library.
+Summary:	WideStudio perl library
 Summary(ja):	WideStudio perl ¥é¥¤¥Ö¥é¥ê
+Summary(pl):	Biblioteka perl do WideStudio
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	perl
@@ -163,6 +186,9 @@ The WideStudio-perl package provides library for perl.
 
 %description perl -l ja
 WideStudio-perl¤Ï¡¢perlÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Þ¤¹¡£
+
+%description perl -l pl
+Pakiet WideStudio-perl dostarcza bibliotekê do perla.
 
 %prep
 %setup -q -n ws-v%{ver}-%{rel}
@@ -182,7 +208,7 @@ cp %{SOURCE12} .
 cp %{SOURCE13} .
 
 %build
-CXXFLAGS=$RPM_OPT_FLAGS ./configure
+CXXFLAGS="%{rpmcflags}" ./configure
 %{__make} WS_DEFAULT_DIR=%{_datadir}/ws runtime
 %{__make} WS_DEFAULT_DIR=%{_datadir}/ws debug
 
@@ -210,11 +236,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYRIGHT Changelog README README.eucjp
-%{_datadir}/ws/bin
-%{_datadir}/ws/lib
-%{_datadir}/ws/include
-%{_datadir}/ws/doc
-%{_includedir}/ws
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/jpg.so
 %attr(755,root,root) %{_libdir}/libws.so*
@@ -231,6 +252,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libwsx11d.so*
 %attr(755,root,root) %{_libdir}/png.so
 %attr(755,root,root) %{_libdir}/xpm.so
+%dir %{_datadir}/ws
+%{_datadir}/ws/bin
+%{_datadir}/ws/lib
+%{_datadir}/ws/include
+%{_datadir}/ws/doc
+%dir %{_datadir}/ws/samples
 %{_datadir}/ws/samples/C
 %{_datadir}/ws/samples/class
 %{_datadir}/ws/samples/EUCJP
@@ -244,6 +271,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/ws/samples/UTF8
 %{_datadir}/ws/samples/UTF8-JP
 %{_datadir}/ws/sys
+%{_includedir}/ws
 
 %files pdfdoc
 %defattr(644,root,root,755)
