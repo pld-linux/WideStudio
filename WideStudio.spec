@@ -60,6 +60,11 @@ Win2K.
 WideStudio¤Ï¡¢Windows95,98,WindowsNT,Windows2000,Linux,FreeBSD,SOLARIS
 ¾å¤ÇÆ°ºî¤¹¤ë¡¢C/C++¤Î½ã¹ñ»º¤Î´°Á´¥Õ¥ê¡¼¤Î¥¦¥£¥ó¥É¥¦¥¢¥×¥ê¥±¡¼¥·¥ç¥óÅý¹ç³«È¯´Ä¶­¤Ç¤¹¡£
 
+%description -l pl
+WideStudio jest zintegrowanym ¶rodowiskiem programistycznym (IDE) do
+tworzenia aplikacji z graficznym interfejsem u¿utkownika (GUI) pod
+Linuksa, FreeBSD, Solarisa, Windows95/98/ME, Windows NT i Win2K.
+
 %package pdfdoc
 Summary:	WideStudio documentation
 Summary(pl):	Dokumentacja do WideStudio
