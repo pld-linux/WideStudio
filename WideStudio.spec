@@ -209,16 +209,14 @@ cp %{SOURCE13} .
 
 %build
 CXXFLAGS="%{rpmcflags}" ./configure
-%{__make} WS_DEFAULT_DIR=%{_datadir}/ws runtime
-%{__make} WS_DEFAULT_DIR=%{_datadir}/ws debug
+%{__make} runtime \
+	WS_DEFAULT_DIR=%{_datadir}/ws 
+%{__make} debug \
+	WS_DEFAULT_DIR=%{_datadir}/ws
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-install -d $RPM_BUILD_ROOT%{_datadir}/ws
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_libdir}
-install -d $RPM_BUILD_ROOT%{_includedir}/ws
+install -d $RPM_BUILD_ROOT{%{_datadir}/ws,%{_bindir},%{_libdir},%{_includedir}/ws}
 
 cp bin/* $RPM_BUILD_ROOT%{_bindir}
 rm -f $RPM_BUILD_ROOT%{_datadir}/ws/bin/.gdb_history
