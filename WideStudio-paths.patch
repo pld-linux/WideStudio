@@ -1,0 +1,242 @@
+diff -Nur ws-v3.20-4.orig/include/WScom.h ws-v3.20-4.chng/include/WScom.h
+--- ws-v3.20-4.orig/include/WScom.h	Thu May 15 12:22:16 2003
++++ ws-v3.20-4.chng/include/WScom.h	Fri Jul  4 10:41:27 2003
+@@ -30,13 +30,13 @@
+ // definition of directories and files
+ ///////////////////////////////////////
+ #ifndef WS_DEFAULT_DIR
+-#define  WS_DEFAULT_DIR   "/usr/local/ws"
++#define  WS_DEFAULT_DIR   "/usr/share/ws"
+ #endif
+ 
+ #if 0
+ #ifdef LINUX
+ # undef  WS_DEFAULT_DIR
+-# define  WS_DEFAULT_DIR   "/usr/local/ws"
++# define  WS_DEFAULT_DIR   "/usr/share/ws"
+ #endif
+ 
+ #ifdef SUN
+diff -Nur ws-v3.20-4.orig/src/pythonlib/tmp/helloworld.py ws-v3.20-4.chng/src/pythonlib/tmp/helloworld.py
+--- ws-v3.20-4.orig/src/pythonlib/tmp/helloworld.py	Wed Oct  2 10:51:15 2002
++++ ws-v3.20-4.chng/src/pythonlib/tmp/helloworld.py	Fri Jul  4 10:40:42 2003
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/python
++#!/usr/bin/python
+ 
+ import mpfc
+ 
+diff -Nur ws-v3.20-4.orig/sys/config/mkflags ws-v3.20-4.chng/sys/config/mkflags
+--- ws-v3.20-4.orig/sys/config/mkflags	Thu May 15 03:06:38 2003
++++ ws-v3.20-4.chng/sys/config/mkflags	Fri Jul  4 10:35:26 2003
+@@ -1,5 +1,5 @@
+-WS_INST_DIR = /usr/local
+-WS_DEFAULT_DIR = /usr/local/ws
++WS_INST_DIR = /usr/share
++WS_DEFAULT_DIR = /usr/share/ws
+ ARCH = -DWS_DEFAULT_DIR=\"$(WS_DEFAULT_DIR)\" -DLINUX
+ CC1 = gcc
+ CC = g++
+@@ -25,9 +25,9 @@
+ XINCS = -I/usr/X11R6/include -I/usr/openwin/include -I/usr/dt/include
+ XLIBS = -L/usr/X11R6/lib -lXext -lXt -lX11 -ldl -lSM -lICE -lpthread
+ INCJPG =
+-LIBJPG = -L/usr/X11R6/lib -ljpeg 
++LIBJPG = -L/usr/lib -ljpeg 
+ INCPNG =
+-LIBPNG = -L/usr/X11R6/lib -lpng -lz
++LIBPNG = -L/usr/lib -lpng -lz
+ INCXPM =
+ LIBXPM = -L/usr/X11R6/lib -lXpm
+ STRIP = echo
+diff -Nur ws-v3.20-4.orig/sys/config/mkflags.linux ws-v3.20-4.chng/sys/config/mkflags.linux
+--- ws-v3.20-4.orig/sys/config/mkflags.linux	Thu May  1 03:03:42 2003
++++ ws-v3.20-4.chng/sys/config/mkflags.linux	Fri Jul  4 10:35:48 2003
+@@ -1,5 +1,5 @@
+-WS_INST_DIR = /usr/local
+-WS_DEFAULT_DIR = /usr/local/ws
++WS_INST_DIR = /usr/share
++WS_DEFAULT_DIR = /usr/share/ws
+ ARCH = -DWS_DEFAULT_DIR=\"$(WS_DEFAULT_DIR)\" -DLINUX
+ CC1 = gcc
+ CC = g++
+@@ -25,9 +25,9 @@
+ XINCS = -I/usr/X11R6/include -I/usr/openwin/include -I/usr/dt/include
+ XLIBS = -L/usr/X11R6/lib -lXext -lXt -lX11 -ldl -lSM -lICE -lpthread
+ INCJPG =
+-LIBJPG = -L/usr/X11R6/lib -ljpeg 
++LIBJPG = -L/usr/lib -ljpeg 
+ INCPNG =
+-LIBPNG = -L/usr/X11R6/lib -lpng -lz
++LIBPNG = -L/usr/lib -lpng -lz
+ INCXPM =
+ LIBXPM = -L/usr/X11R6/lib -lXpm
+ STRIP = echo
+diff -Nur ws-v3.20-4.orig/sys/data/C/default.rc ws-v3.20-4.chng/sys/data/C/default.rc
+--- ws-v3.20-4.orig/sys/data/C/default.rc	Thu May 15 03:06:38 2003
++++ ws-v3.20-4.chng/sys/data/C/default.rc	Fri Jul  4 10:33:04 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ xterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/C/default.rc.linux ws-v3.20-4.chng/sys/data/C/default.rc.linux
+--- ws-v3.20-4.orig/sys/data/C/default.rc.linux	Mon Feb 10 05:36:56 2003
++++ ws-v3.20-4.chng/sys/data/C/default.rc.linux	Fri Jul  4 10:33:18 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ xterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/EUCJP/default.rc ws-v3.20-4.chng/sys/data/EUCJP/default.rc
+--- ws-v3.20-4.orig/sys/data/EUCJP/default.rc	Thu May 15 03:06:38 2003
++++ ws-v3.20-4.chng/sys/data/EUCJP/default.rc	Fri Jul  4 10:32:40 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ kterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/EUCJP/default.rc.linux ws-v3.20-4.chng/sys/data/EUCJP/default.rc.linux
+--- ws-v3.20-4.orig/sys/data/EUCJP/default.rc.linux	Mon Feb 10 05:37:57 2003
++++ ws-v3.20-4.chng/sys/data/EUCJP/default.rc.linux	Fri Jul  4 10:32:52 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ kterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/SJIS/default.rc ws-v3.20-4.chng/sys/data/SJIS/default.rc
+--- ws-v3.20-4.orig/sys/data/SJIS/default.rc	Thu May 15 03:06:38 2003
++++ ws-v3.20-4.chng/sys/data/SJIS/default.rc	Fri Jul  4 10:32:16 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ kterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/SJIS/default.rc.linux ws-v3.20-4.chng/sys/data/SJIS/default.rc.linux
+--- ws-v3.20-4.orig/sys/data/SJIS/default.rc.linux	Mon Feb 10 05:38:43 2003
++++ ws-v3.20-4.chng/sys/data/SJIS/default.rc.linux	Fri Jul  4 10:32:28 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ kterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/UTF8_JP/default.rc ws-v3.20-4.chng/sys/data/UTF8_JP/default.rc
+--- ws-v3.20-4.orig/sys/data/UTF8_JP/default.rc	Thu May 15 03:06:38 2003
++++ ws-v3.20-4.chng/sys/data/UTF8_JP/default.rc	Fri Jul  4 10:31:48 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ kterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD
+diff -Nur ws-v3.20-4.orig/sys/data/UTF8_JP/default.rc.linux ws-v3.20-4.chng/sys/data/UTF8_JP/default.rc.linux
+--- ws-v3.20-4.orig/sys/data/UTF8_JP/default.rc.linux	Tue Mar  4 17:37:53 2003
++++ ws-v3.20-4.chng/sys/data/UTF8_JP/default.rc.linux	Fri Jul  4 10:32:03 2003
+@@ -7,13 +7,13 @@
+ #TERMINAL
+ kterm
+ #RUBY
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #RUBYD
+-/usr/local/bin/ruby
++/usr/bin/ruby
+ #PYTHON
+-/usr/local/bin/python
++/usr/bin/python
+ #PYTHOND
+-/usr/local/bin/python
++/usr/bin/python
+ #PERL
+ /usr/bin/perl
+ #PERLD

@@ -35,6 +35,7 @@ Source12:	http://dl.sf.net/widestudio/WSusersGUide-en.pdf
 # Source12-md5:	5234a8290741403ef950bafc120e5c17
 Source13:	http://dl.sf.net/widestudio/WSusersGuide-jp.pdf             
 # Source13-md5:	a1f8686f942a8d555e9cab6b3a8d40fb
+Patch0:		%{name}-paths.patch
 Group:		X11/Development/Tools
 URL:		http://www.widestudio.org
 BuildRequires:	libjpeg-devel
@@ -165,6 +166,7 @@ WideStudio-perlは、perl用のライブラリを提供します。
 
 %prep
 %setup -q -n ws-v%{ver}-%{rel}
+%patch0 -p1
 cp %{SOURCE1} .
 cp %{SOURCE2} .
 cp %{SOURCE3} .
