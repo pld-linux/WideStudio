@@ -35,7 +35,7 @@ Source11:	http://dl.sf.net/widestudio/WSuoTutorial2-en.pdf
 # Source11-md5:	221161ca6c400227ba1b8590aeb9ba5a
 Source12:	http://dl.sf.net/widestudio/WSusersGUide-en.pdf
 # Source12-md5:	5234a8290741403ef950bafc120e5c17
-Source13:	http://dl.sf.net/widestudio/WSusersGuide-jp.pdf             
+Source13:	http://dl.sf.net/widestudio/WSusersGuide-jp.pdf
 # Source13-md5:	a1f8686f942a8d555e9cab6b3a8d40fb
 Patch0:		%{name}-paths.patch
 URL:		http://www.widestudio.org/
@@ -215,7 +215,7 @@ cp %{SOURCE13} .
 %build
 CXXFLAGS="%{rpmcflags}" ./configure
 %{__make} runtime \
-	WS_DEFAULT_DIR=%{_datadir}/ws 
+	WS_DEFAULT_DIR=%{_datadir}/ws
 %{__make} debug \
 	WS_DEFAULT_DIR=%{_datadir}/ws
 
