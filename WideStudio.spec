@@ -9,33 +9,33 @@ Version:	%{ver}.%{rel}
 Release:	1
 License:	BSD
 Group:		X11/Development/Tools
-Source0:	http://dl.sf.net/widestudio/ws-v%{ver}-%{rel}-src.tar.gz
+Source0:	http://dl.sourceforge.net/widestudio/ws-v%{ver}-%{rel}-src.tar.gz
 # Source0-md5:	2a360360f146d1b022db8410010917b8
-Source1:	http://dl.sf.net/widestudio/WSClassReference-je.pdf
+Source1:	http://dl.sourceforge.net/widestudio/WSClassReference-je.pdf
 # Source1-md5:	ad329917e61fbf28f1c60b17243f45bd
-Source2:	http://dl.sf.net/widestudio/WSProgrammingGuide-ee.pdf
+Source2:	http://dl.sourceforge.net/widestudio/WSProgrammingGuide-ee.pdf
 # Source2-md5:	57018c9330b9779b2d99b6b39b28522c
-Source3:	http://dl.sf.net/widestudio/WSProgrammingGuide-je.pdf
+Source3:	http://dl.sourceforge.net/widestudio/WSProgrammingGuide-je.pdf
 # Source3-md5:	02ac28043c0c3c283de8839c357b0490
-Source4:	http://dl.sf.net/widestudio/WSUsersGuide-ee.pdf
+Source4:	http://dl.sourceforge.net/widestudio/WSUsersGuide-ee.pdf
 # Source4-md5:	976d79e1217c0a1b3711581cd028eb71
-Source5:	http://dl.sf.net/widestudio/WSUsersGuide-je.pdf
+Source5:	http://dl.sourceforge.net/widestudio/WSUsersGuide-je.pdf
 # Source5-md5:	4338a9fdb505521bdc9ada0d28d155f6
-Source6:	http://dl.sf.net/widestudio/WSclassReference-en.pdf
+Source6:	http://dl.sourceforge.net/widestudio/WSclassReference-en.pdf
 # Source6-md5:	6b643a84e05872451437f155894298d7
-Source7:	http://dl.sf.net/widestudio/WSprogrammingGuide-en.pdf
+Source7:	http://dl.sourceforge.net/widestudio/WSprogrammingGuide-en.pdf
 # Source7-md5:	a4d598200abf4b805d3cfb64066a355b
-Source8:	http://dl.sf.net/widestudio/WSprogrammingGuide-jp.pdf
+Source8:	http://dl.sourceforge.net/widestudio/WSprogrammingGuide-jp.pdf
 # Source8-md5:	bca138add0ee623486558de91b68d7ea
-Source9:	http://dl.sf.net/widestudio/WSquickReference-en.pdf
+Source9:	http://dl.sourceforge.net/widestudio/WSquickReference-en.pdf
 # Source9-md5:	4cfdfc6ac0906fffd12efa79ee4825fa
-Source10:	http://dl.sf.net/widestudio/WSuoTutorial1-ee.pdf
+Source10:	http://dl.sourceforge.net/widestudio/WSuoTutorial1-ee.pdf
 # Source10-md5:	4cdb925d3033abd4a93f8e423a1f28f4
-Source11:	http://dl.sf.net/widestudio/WSuoTutorial2-en.pdf
+Source11:	http://dl.sourceforge.net/widestudio/WSuoTutorial2-en.pdf
 # Source11-md5:	221161ca6c400227ba1b8590aeb9ba5a
-Source12:	http://dl.sf.net/widestudio/WSusersGUide-en.pdf
+Source12:	http://dl.sourceforge.net/widestudio/WSusersGUide-en.pdf
 # Source12-md5:	5234a8290741403ef950bafc120e5c17
-Source13:	http://dl.sf.net/widestudio/WSusersGuide-jp.pdf
+Source13:	http://dl.sourceforge.net/widestudio/WSusersGuide-jp.pdf
 # Source13-md5:	a1f8686f942a8d555e9cab6b3a8d40fb
 Patch0:		%{name}-paths.patch
 URL:		http://www.widestudio.org/
