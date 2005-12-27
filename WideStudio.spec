@@ -6,7 +6,7 @@ Summary(ja):	WideStudio ¥¢¥×¥ê¥±¡¼¥·¥ç¥ó¥Ó¥ë¥À
 Summary(pl):	WideStudio - ¶rodowisko do budowania aplikacji
 Name:		WideStudio
 Version:	%{ver}.%{rel}
-Release:	1
+Release:	2
 License:	BSD
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/widestudio/ws-v%{ver}-%{rel}-src.tar.gz
@@ -47,7 +47,7 @@ BuildRequires:	mysql-devel
 BuildRequires:	perl-devel
 BuildRequires:	postgresql-devel
 BuildRequires:	python-devel
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 BuildRequires:	unixODBC-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -167,7 +167,7 @@ Summary(ja):	WideStudio ruby ¥é¥¤¥Ö¥é¥ê
 Summary(pl):	Biblioteka ruby do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
-Requires:	ruby
+Requires:	ruby-modules
 
 %description ruby
 The WideStudio-ruby package provides library for ruby.
