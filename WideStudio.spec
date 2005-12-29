@@ -47,8 +47,10 @@ BuildRequires:	mysql-devel
 BuildRequires:	perl-devel
 BuildRequires:	postgresql-devel
 BuildRequires:	python-devel
-BuildRequires:	ruby-modules
+BuildRequires:	rpmbuild(macros) >= 1.277
+BuildRequires:	ruby-devel
 BuildRequires:	unixODBC-devel
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -167,7 +169,7 @@ Summary(ja):	WideStudio ruby ライブラリ
 Summary(pl):	Biblioteka ruby do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 
 %description ruby
 The WideStudio-ruby package provides library for ruby.
