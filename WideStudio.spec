@@ -2,8 +2,8 @@
 %define		rel		4
 
 Summary:	WideStudio Application Builder
-Summary(ja.UTF-8):   WideStudio アプリケーションビルダ
-Summary(pl.UTF-8):   WideStudio - środowisko do budowania aplikacji
+Summary(ja.UTF-8):	WideStudio アプリケーションビルダ
+Summary(pl.UTF-8):	WideStudio - środowisko do budowania aplikacji
 Name:		WideStudio
 Version:	%{ver}.%{rel}
 Release:	2
@@ -69,7 +69,7 @@ Linuksa, FreeBSD, Solarisa, Windows95/98/ME, Windows NT i Win2K.
 
 %package pdfdoc
 Summary:	WideStudio documentation
-Summary(pl.UTF-8):   Dokumentacja do WideStudio
+Summary(pl.UTF-8):	Dokumentacja do WideStudio
 Group:		X11/Development/Tools
 
 %description pdfdoc
@@ -80,8 +80,8 @@ Dokumentacja do WideStudio.
 
 %package opengl
 Summary:	WideStudio OpenGL library
-Summary(ja.UTF-8):   WideStudio OpenGL ライブラリ
-Summary(pl.UTF-8):   Biblioteka OpenGL do WideStudio
+Summary(ja.UTF-8):	WideStudio OpenGL ライブラリ
+Summary(pl.UTF-8):	Biblioteka OpenGL do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	glut-devel
@@ -97,8 +97,8 @@ Pakiet WideStudio-opengl dostarcza bibliotekę do OpenGL.
 
 %package mysql
 Summary:	WideStudio MySQL library
-Summary(ja.UTF-8):   WideStudio MySQL ライブラリ
-Summary(pl.UTF-8):   Biblioteka MySQL do WideStudio
+Summary(ja.UTF-8):	WideStudio MySQL ライブラリ
+Summary(pl.UTF-8):	Biblioteka MySQL do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	mysql-devel
@@ -114,8 +114,8 @@ Pakiet WideStudio-mysql dostarcza bibliotekę do MySQL.
 
 %package postgresql
 Summary:	WideStudio PostgreSQL library
-Summary(ja.UTF-8):   WideStudio PostgreSQL ライブラリ
-Summary(pl.UTF-8):   Biblioteka PostgreSQL do Widestudio
+Summary(ja.UTF-8):	WideStudio PostgreSQL ライブラリ
+Summary(pl.UTF-8):	Biblioteka PostgreSQL do Widestudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	postgresql-devel
@@ -131,8 +131,8 @@ Pakiet WideStudio-postgresql dostarcza bibliotekę do PostgreSQL.
 
 %package unixodbc
 Summary:	WideStudio unixODBC library
-Summary(ja.UTF-8):   WideStudio unixODBC ライブラリ
-Summary(pl.UTF-8):   Biblioteka unixODBC do WideStudio
+Summary(ja.UTF-8):	WideStudio unixODBC ライブラリ
+Summary(pl.UTF-8):	Biblioteka unixODBC do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	unixODBC-devel
@@ -148,8 +148,8 @@ Pakiet WideStudio-unixodbc dostarcza bibliotekę do unixODBC.
 
 %package python
 Summary:	WideStudio python library
-Summary(ja.UTF-8):   WideStudio python ライブラリ
-Summary(pl.UTF-8):   Biblioteka python do WideStudio
+Summary(ja.UTF-8):	WideStudio python ライブラリ
+Summary(pl.UTF-8):	Biblioteka python do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	python
@@ -165,8 +165,8 @@ Pakiet WideStudio-python dostarcza bibliotekę do pythona.
 
 %package ruby
 Summary:	WideStudio ruby library
-Summary(ja.UTF-8):   WideStudio ruby ライブラリ
-Summary(pl.UTF-8):   Biblioteka ruby do WideStudio
+Summary(ja.UTF-8):	WideStudio ruby ライブラリ
+Summary(pl.UTF-8):	Biblioteka ruby do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 %{?ruby_mod_ver_requires_eq}
@@ -182,8 +182,8 @@ Pakiet WideStudio-ruby dostarcza bibliotekę do ruby'ego.
 
 %package perl
 Summary:	WideStudio perl library
-Summary(ja.UTF-8):   WideStudio perl ライブラリ
-Summary(pl.UTF-8):   Biblioteka perl do WideStudio
+Summary(ja.UTF-8):	WideStudio perl ライブラリ
+Summary(pl.UTF-8):	Biblioteka perl do WideStudio
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	perl
