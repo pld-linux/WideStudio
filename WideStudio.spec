@@ -2,8 +2,8 @@
 %define		rel		4
 
 Summary:	WideStudio Application Builder
-Summary(ja):	WideStudio ¥¢¥×¥ê¥±¡¼¥·¥ç¥ó¥Ó¥ë¥À
-Summary(pl):	WideStudio - ¶rodowisko do budowania aplikacji
+Summary(ja.UTF-8):   WideStudio ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ“ãƒ«ãƒ€
+Summary(pl.UTF-8):   WideStudio - Å›rodowisko do budowania aplikacji
 Name:		WideStudio
 Version:	%{ver}.%{rel}
 Release:	2
@@ -58,30 +58,30 @@ WideStudio is an integrated development environment(IDE) to build GUI
 applications for Linux, FreeBSD, Solaris, Windows95/98/ME, Windows NT,
 Win2K.
 
-%description -l ja
-WideStudio¤Ï¡¢Windows95,98,WindowsNT,Windows2000,Linux,FreeBSD,SOLARIS
-¾å¤ÇÆ°ºî¤¹¤ë¡¢C/C++¤Î½ã¹ñ»º¤Î´°Á´¥Õ¥ê¡¼¤Î¥¦¥£¥ó¥É¥¦¥¢¥×¥ê¥±¡¼¥·¥ç¥óÅı¹ç³«È¯´Ä¶­¤Ç¤¹¡£
+%description -l ja.UTF-8
+WideStudioã¯ã€Windows95,98,WindowsNT,Windows2000,Linux,FreeBSD,SOLARIS
+ä¸Šã§å‹•ä½œã™ã‚‹ã€C/C++ã®ç´”å›½ç”£ã®å®Œå…¨ãƒ•ãƒªãƒ¼ã®ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³çµ±åˆé–‹ç™ºç’°å¢ƒã§ã™ã€‚
 
-%description -l pl
-WideStudio jest zintegrowanym ¶rodowiskiem programistycznym (IDE) do
-tworzenia aplikacji z graficznym interfejsem u¿ytkownika (GUI) pod
+%description -l pl.UTF-8
+WideStudio jest zintegrowanym Å›rodowiskiem programistycznym (IDE) do
+tworzenia aplikacji z graficznym interfejsem uÅ¼ytkownika (GUI) pod
 Linuksa, FreeBSD, Solarisa, Windows95/98/ME, Windows NT i Win2K.
 
 %package pdfdoc
 Summary:	WideStudio documentation
-Summary(pl):	Dokumentacja do WideStudio
+Summary(pl.UTF-8):   Dokumentacja do WideStudio
 Group:		X11/Development/Tools
 
 %description pdfdoc
 WideStudio documentation.
 
-%description pdfdoc -l pl
+%description pdfdoc -l pl.UTF-8
 Dokumentacja do WideStudio.
 
 %package opengl
 Summary:	WideStudio OpenGL library
-Summary(ja):	WideStudio OpenGL ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka OpenGL do WideStudio
+Summary(ja.UTF-8):   WideStudio OpenGL ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka OpenGL do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	glut-devel
@@ -89,16 +89,16 @@ Requires:	glut-devel
 %description opengl
 The WideStudio-opengl package provides library for OpenGL.
 
-%description opengl -l ja
-WideStudio-opengl¤Ï¡¢OpenGLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description opengl -l ja.UTF-8
+WideStudio-openglã¯ã€OpenGLç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description opengl -l pl
-Pakiet WideStudio-opengl dostarcza bibliotekê do OpenGL.
+%description opengl -l pl.UTF-8
+Pakiet WideStudio-opengl dostarcza bibliotekÄ™ do OpenGL.
 
 %package mysql
 Summary:	WideStudio MySQL library
-Summary(ja):	WideStudio MySQL ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka MySQL do WideStudio
+Summary(ja.UTF-8):   WideStudio MySQL ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka MySQL do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	mysql-devel
@@ -106,16 +106,16 @@ Requires:	mysql-devel
 %description mysql
 The WideStudio-mysql package provides library for MySQL.
 
-%description mysql -l ja
-WideStudio-mysql¤Ï¡¢MySQLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description mysql -l ja.UTF-8
+WideStudio-mysqlã¯ã€MySQLç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description mysql -l pl
-Pakiet WideStudio-mysql dostarcza bibliotekê do MySQL.
+%description mysql -l pl.UTF-8
+Pakiet WideStudio-mysql dostarcza bibliotekÄ™ do MySQL.
 
 %package postgresql
 Summary:	WideStudio PostgreSQL library
-Summary(ja):	WideStudio PostgreSQL ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka PostgreSQL do Widestudio
+Summary(ja.UTF-8):   WideStudio PostgreSQL ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka PostgreSQL do Widestudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	postgresql-devel
@@ -123,16 +123,16 @@ Requires:	postgresql-devel
 %description postgresql
 The WideStudio-postgresql package provides library for PostgreSQL.
 
-%description postgresql -l ja
-WideStudio-postgresql¤Ï¡¢PostgreSQLÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description postgresql -l ja.UTF-8
+WideStudio-postgresqlã¯ã€PostgreSQLç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description postgresql -l pl
-Pakiet WideStudio-postgresql dostarcza bibliotekê do PostgreSQL.
+%description postgresql -l pl.UTF-8
+Pakiet WideStudio-postgresql dostarcza bibliotekÄ™ do PostgreSQL.
 
 %package unixodbc
 Summary:	WideStudio unixODBC library
-Summary(ja):	WideStudio unixODBC ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka unixODBC do WideStudio
+Summary(ja.UTF-8):   WideStudio unixODBC ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka unixODBC do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	unixODBC-devel
@@ -140,16 +140,16 @@ Requires:	unixODBC-devel
 %description unixodbc
 The WideStudio-unixodbc package provides library for unixODBC.
 
-%description unixodbc -l ja
-WideStudio-unixodbc¤Ï¡¢unixODBCÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description unixodbc -l ja.UTF-8
+WideStudio-unixodbcã¯ã€unixODBCç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description unixodbc -l pl
-Pakiet WideStudio-unixodbc dostarcza bibliotekê do unixODBC.
+%description unixodbc -l pl.UTF-8
+Pakiet WideStudio-unixodbc dostarcza bibliotekÄ™ do unixODBC.
 
 %package python
 Summary:	WideStudio python library
-Summary(ja):	WideStudio python ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka python do WideStudio
+Summary(ja.UTF-8):   WideStudio python ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka python do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	python
@@ -157,16 +157,16 @@ Requires:	python
 %description python
 The WideStudio-python package provides library for python.
 
-%description python -l ja
-WideStudio-python¤Ï¡¢pythonÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description python -l ja.UTF-8
+WideStudio-pythonã¯ã€pythonç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description python -l pl
-Pakiet WideStudio-python dostarcza bibliotekê do pythona.
+%description python -l pl.UTF-8
+Pakiet WideStudio-python dostarcza bibliotekÄ™ do pythona.
 
 %package ruby
 Summary:	WideStudio ruby library
-Summary(ja):	WideStudio ruby ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka ruby do WideStudio
+Summary(ja.UTF-8):   WideStudio ruby ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka ruby do WideStudio
 Group:		X11/Development/Tools
 Requires:	%{name} = %{version}-%{release}
 %{?ruby_mod_ver_requires_eq}
@@ -174,16 +174,16 @@ Requires:	%{name} = %{version}-%{release}
 %description ruby
 The WideStudio-ruby package provides library for ruby.
 
-%description ruby -l ja
-WideStudio-ruby¤Ï¡¢rubyÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description ruby -l ja.UTF-8
+WideStudio-rubyã¯ã€rubyç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description ruby -l pl
-Pakiet WideStudio-ruby dostarcza bibliotekê do ruby'ego.
+%description ruby -l pl.UTF-8
+Pakiet WideStudio-ruby dostarcza bibliotekÄ™ do ruby'ego.
 
 %package perl
 Summary:	WideStudio perl library
-Summary(ja):	WideStudio perl ¥é¥¤¥Ö¥é¥ê
-Summary(pl):	Biblioteka perl do WideStudio
+Summary(ja.UTF-8):   WideStudio perl ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+Summary(pl.UTF-8):   Biblioteka perl do WideStudio
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 Requires:	perl
@@ -191,11 +191,11 @@ Requires:	perl
 %description perl
 The WideStudio-perl package provides library for perl.
 
-%description perl -l ja
-WideStudio-perl¤Ï¡¢perlÍÑ¤Î¥é¥¤¥Ö¥é¥ê¤òÄó¶¡¤·¤Ş¤¹¡£
+%description perl -l ja.UTF-8
+WideStudio-perlã¯ã€perlç”¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description perl -l pl
-Pakiet WideStudio-perl dostarcza bibliotekê do perla.
+%description perl -l pl.UTF-8
+Pakiet WideStudio-perl dostarcza bibliotekÄ™ do perla.
 
 %prep
 %setup -q -n ws-v%{ver}-%{rel}
